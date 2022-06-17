@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
-	"name": "Awesome Extension",
-	"version": "0.0.0",
-	"description": "Turns the page red when you click the icon",
+	"name": "DHU Portal Auto Login",
+	"version": "0.1.0",
+	"description": "デジキャンに自動ログインします",
 	"content_scripts": [
 		{ "matches": ["https://portal.dhw.ac.jp/*/*"], "js": ["auto-login.js"] }
 	],

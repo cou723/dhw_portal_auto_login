@@ -1,3 +1,4 @@
+import optionsStorage from './options-storage.js';
 import * as page from './page_decision.js';
 
 console.debug('start');
@@ -5,16 +6,18 @@ console.debug(
     page.isPCLoginPage(), page.isPCAskReLogin(), page.isSPLoginPage(),
     page.isSPAskReLogin());
 
-const userName = 'A22DC030';
-const password = '*****';
-
 if (isPasswordMissing()) {
   console.debug('password missing');
   return;
 }
+
 login_process();
 
-function login_process() {
+async function login_process() {
+  const options = await optionsStorage.getAll();
+  const userName = options.userName;
+  const password = options.password;
+  console.debug('userName:', userName, 'password:', password);
   // PC自動ログイン
   if (page.isPCLoginPage()) {
     console.debug('PCLogin');

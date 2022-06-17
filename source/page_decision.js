@@ -17,9 +17,9 @@ export function isPCAskReLogin() {
   if (!document.querySelectorAll('.innerInfo')[0]) {
     return false;
   }
-  const info = document.querySelector('.innerInfo')[0];
+  const info = document.querySelectorAll('.innerInfo')[0];
 
-  return textContent in info && info.textContent === PC_RELOGIN_INFO &&
+  return 'textContent' in info && info.textContent === PC_RELOGIN_INFO &&
       document.querySelectorAll('.ui-button')[0];
 }
 

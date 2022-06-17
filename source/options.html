@@ -3,33 +3,23 @@
 <title>Options</title>
 
 <form id="options-form" class="detail-view-container">
-	<h3>Color Picker</h3>
-	<div class="color-picker">
-		<div class="color-inputs">
-			<label class="color-input">
-				<span>R</span>
-				<input type="range" min="0" max="255" name="colorRed">
-				<input type="number" name="colorRed" min="0" max="255">
-			</label>
-			<label class="color-input">
-				<span>G</span>
-				<input type="range" min="0" max="255" name="colorGreen">
-				<input type="number" name="colorGreen" min="0" max="255">
-			</label>
-			<label class="color-input">
-				<span>B</span>
-				<input type="range" min="0" max="255" name="colorBlue">
-				<input type="number" name="colorBlue" min="0" max="255">
-			</label>
+	<h3>USER DATA</h3>
+	<div class="config">
+		<div class="config-inputs ">
+			<div>
+				<label class="config-input">
+					<span>User Name</span>
+					<input type="textarea" name="userName">
+				</label>
+			</div>
+			<div>
+				<label class=" config-input">
+					<span>Password</span>
+					<input type="textarea" name="password">
+				</label>
+			</div>
 		</div>
-		<div class="color-output"></div>
-	</div>
-	<h3>Notice Content</h3>
-	<div class="text-inputs">
-		<label class="text-input">
-			<span>Text</span>
-			<input type="text" name="text">
-		</label>
+		<div class="config-output"></div>
 	</div>
 </form>
 
