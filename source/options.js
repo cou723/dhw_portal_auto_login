@@ -8,7 +8,7 @@ import browser from 'webextension-polyfill';
 import optionsStorage from './options-storage.js';
 
 async function init() {
-  await optionsStorage.syncForm('#options-form');
+	await optionsStorage.syncForm('#options-form');
 }
 
 init();
