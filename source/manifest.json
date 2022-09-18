@@ -1,16 +1,33 @@
 {
 	"manifest_version": 3,
-	"name": "DHU Portal Auto Login",
-	"version": "0.1.0",
+	"name": "デジキャンに自動でログインするやつ",
+	"version": "1.0.0",
 	"description": "デジキャンに自動ログインします",
 	"content_scripts": [
-		{ "matches": ["https://portal.dhw.ac.jp/*/*"], "js": ["auto-login.js"] }
+		{
+			"matches": [
+				"https://portal.dhw.ac.jp/*/*"
+			],
+			"js": [
+				"auto-login.js"
+			]
+		}
 	],
 	"icons": {
-		"128": "icon.png"
+		"16": "icon-16x16.png",
+		"24": "icon-24x24.png",
+		"32": "icon-32x32.png",
+		"48": "icon-48x48.png",
+		"72": "icon-72x72.png",
+		"96": "icon-96x96.png",
+		"128": "icon-128x128.png"
 	},
-	"permissions": ["storage"],
-	"host_permissions": ["https://portal.dhw.ac.jp/*/*"],
+	"permissions": [
+		"storage"
+	],
+	"host_permissions": [
+		"https://portal.dhw.ac.jp/*/*"
+	],
 	"options_ui": {
 		"browser_style": true,
 		"page": "options.html"

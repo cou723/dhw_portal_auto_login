@@ -2,7 +2,7 @@ const RE_LOGIN_INFO
     = '長時間操作が行われなかったため、自動的にログアウトされました。ログイン画面より再度ログイン認証を行ってください。';
 
 function isReLoginMessage(info) {
-	return info.replace(/\n/g, '').replace(/ /g, '');
+	return info.replace(/\n/g, '').replace(/ /g, '') === RE_LOGIN_INFO;
 }
 
 // ページ判定関数
