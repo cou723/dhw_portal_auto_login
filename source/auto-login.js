@@ -1,8 +1,6 @@
 import optionsStorage from './options-storage.js';
 import * as page from './page-decision.js';
 
-Window.addEventListener('load', main());
-
 async function main() {
 	console.debug('start');
 	console.debug(
@@ -68,3 +66,5 @@ function isPasswordMissing() {
 			=== 'ユーザＩＤまたはパスワードが正しくありません。'
 	);
 }
+
+Window.addEventListener('load', main());

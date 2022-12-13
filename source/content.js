@@ -12,4 +12,4 @@ async function init() {
 	notice.style.color = color;
 }
 
-init();
+await init();

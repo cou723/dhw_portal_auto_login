@@ -11,4 +11,4 @@ async function init() {
 	await optionsStorage.syncForm('#options-form');
 }
 
-init();
+await init();
